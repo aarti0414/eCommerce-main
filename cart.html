@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - ECraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="store.js" async></script>
+
+</head>
+<body>
+    <div class="containercart container">
+        <div class="navbar">
+                <img src="images/logo.png" alt=""  width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+               <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt=""></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </nav>
+      
+    </div>
+</div>
+<br>
+<section id="cart" class="container">
+    <h2 class="title">CART</h2>
+    <div class="cart-row cart-header">
+        <span class='cart-item cart-column'>ITEM</span>
+        <span class='cart-price cart-column'>PRICE</span>
+        <span class='cart-quantity cart-column'>QUANTITY</span>
+    </div>
+    <div class='cart-items'>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="images/product4.jpg" alt="" width="100" height="100">
+                <span class="cart-item-title">WallClock</span>
+            </div>
+            <span class="cart-price cart-column">Rs 2599</span>
+        
+            <div class="cart-quantity">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+        </div>
+    </div>
+    <div class='cart-items'>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="images/product9.jpg" alt="" width="100" height="100">
+                <span class="cart-item-title">Wooden Elephant</span>
+            </div>
+            <span class="cart-price cart-column">Rs 1500</span>
+        
+            <div class="cart-quantity">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$39.97</span>
+    </div>
+    <a href="" class="btn">Purchase</a>
+</section>
+<!-- ------------footer--------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and ios mobile</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" >
+                    <img src="images/app-store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" alt="">
+                <p>Our Purpose is to Sustainably make the pleasure of  modern craft</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Aarti Waraikar</p>
+    </div>
+</div>
+
+<!-- ---------------js for toggle menu--------------- -->
+<script>
+    var MenuItems = document.getElementById("MenuItems")
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+</body>
+</html>
